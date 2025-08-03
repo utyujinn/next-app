@@ -1,0 +1,45 @@
+.panel {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 1px 0px;
+  margin: 10px 5%;
+  cursor: pointer;
+  box-shadow: 4px 4px lightblue, -2px -2px orange;
+}
+
+.panel:hover {
+  transform: translateY(-2px);
+}
+
+.date {
+  text-align: left;
+  color: #888888;
+  font-size: 0.8rem; /* 14px */
+  margin: 0;
+}
+
+.title {
+  font-size: 16px; /* 20px */
+  margin: 0 20px;
+  color: #333333;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+.tagsContainer {
+  margin: 0 20px;
+  display: flex;
+  flex-wrap: wrap; /* タグが多すぎてはみ出す場合に折り返す */
+  gap: 8px; /* タグ間の隙間 */
+}
+
+.tag {
+  background-color: #f0f0f0;
+  color: #555;
+  font-size: 0.75rem; /* 12px */
+  padding: 2px 5px;
+  border-radius: 8px; /* 角を丸くしてカプセル型に */
+  white-space: nowrap; /* タグ名が改行されるのを防ぐ */
+}

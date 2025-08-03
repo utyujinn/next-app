@@ -1,0 +1,29 @@
+body {
+  padding: 20px 20px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fed8eb;
+}
+
+div.contents  {
+  width: 70%;
+  text-align: center;
+  margin: 10px auto;
+  border: 3px solid green;
+  border-style: dashed;
+  border-color: #DDD;
+  border-radius: 30px;
+}
+
+p {
+  font-size: 20px;
+}
+
+ul {
+  list-style-type: "♡";
+}
+
+a {
+  color: purple;
+  text-decoration: none;
+}

@@ -1,0 +1,49 @@
+.container{
+  box-shadow: 10px 10px lightblue, -5px -5px orange;
+  background-color: #F8F8F8;
+  margin: 20px 10px;
+  padding: 10px 10px;
+}
+
+ul,ol{
+  padding-inline-start: 25px;
+}
+
+p{
+  font-size: 15px;
+}
+
+pre{
+  background-color: #444;
+  color: white;
+  overflow-x: auto;
+  border-radius: 5px;
+  padding: 10px 10px;
+}
+
+code{
+  background-color: #444;
+  color: white;
+  border-radius: 3px;
+  padding: 1px 3px;
+  font-family: "Sans-serif";
+}
+
+table, th, td {
+  margin: auto;
+  text-align: center;
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+th{
+  background-color: greenyellow;
+}
+
+th, td{
+  padding: 2px 4px;
+}
+
+tr:nth-child(2n) td {
+  background-color: #ffdaf8;
+}

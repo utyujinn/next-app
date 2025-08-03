@@ -31,14 +31,11 @@ export async function generateStaticParams() {
   });
 }
 
-
 export default async function Page({
   params,
 }: {
-  params: { 
-    slug: string[];
-  }
-}) {
+  params: Promise<{slug: string[]}>})
+{
   const { slug } = await params;
   const decodedSlug = slug.map(segment => decodeURIComponent(segment));
   const postPath = decodedSlug.join("/");

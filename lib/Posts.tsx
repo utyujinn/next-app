@@ -15,7 +15,6 @@ export default async function Posts({
   const markdownFilePath = path.join(process.cwd(),'app/blog/md', `${filename}.md`);
   const markdown:string = await fsPromises.readFile(markdownFilePath, 'utf-8');
   const { data, content } = matter(markdown);
-  console.log(data);
   return (
     <div>
       <h1>{data.title}</h1>

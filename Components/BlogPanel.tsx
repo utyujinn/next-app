@@ -1,5 +1,14 @@
 import styles from './BlogPanel.module.css';
-export default function BlogPanel({ date, title, tags }){
+
+export default function BlogPanel({
+  date,
+  title,
+  tags
+}: {
+  date: Date;
+  title: string;
+  tags: string[];
+}){
   const dateObject = typeof date === 'string' ? new Date(date):date;
   return (
     <div className={styles.panel}>

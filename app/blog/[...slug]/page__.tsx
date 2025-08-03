@@ -1,7 +1,5 @@
 import fs from 'fs';
 import path from 'path';
-import Posts from "@/lib/Posts"
-import "./layout.css"
 
 export async function generateStaticParams() {
   const postsDirectory = path.join(process.cwd(), 'app/blog/md');
@@ -30,20 +28,7 @@ export async function generateStaticParams() {
   });
 }
 
-export default async function Page({
-  params,
-}: {
-  params: { 
-    slug: string[];
-  }
-}) {
-  const { slug } = params;
-  const decodedSlug = slug.map(segment => decodeURIComponent(segment));
-  const postPath = decodedSlug.join("/");
+export default async function Page(){
   return <>
-  <h1>{decodedSlug[slug.length-1]}</h1>
-  <div className="container">
-  <Posts filename={postPath}/>
-  </div>
   </>
 }
